@@ -59,7 +59,7 @@ def main ():
                         name = input("Introduce the student's name: ")
                         age = int(input("Introduce the student's age: "))
                         course = input("What is the student's program or course?: ")
-                        state = bool(input("What is the student's status?(Write 1 -> active and 0 -> inactive): "))
+                        state = bool(int(input("What is the student's status?(Write 1 -> active and 0 -> inactive): ")))
 
                         i += 1
 
@@ -134,7 +134,7 @@ def main ():
                     print("=" * 50)
 
                     new_course = input("Enter the new program to update: ")
-                    new_state = bool(input("Enter the new status to update (1 (active) or 0 (inactive)): "))
+                    new_state = bool(int(input("Enter the new status to update (1 (active) or 0 (inactive)): ")))
 
                     updated = update_info(student_list, name, new_course, new_state)
 

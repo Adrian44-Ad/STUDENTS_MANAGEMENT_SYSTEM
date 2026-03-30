@@ -33,7 +33,7 @@ def show_list (student_list):
 
     return list
 
-def search_student (student_list, name, id):
+def search_student (student_list, name):
         
         for student in student_list:
             if student["name"].lower() == name.lower():
@@ -58,7 +58,7 @@ def remove_student (student_list, name):
 
     for i, student in enumerate(student_list):
         if student["name"].lower() == name.lower():
-            del student[i]
+            del student_list[i]
             return True
         
     return False
