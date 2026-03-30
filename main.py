@@ -120,7 +120,7 @@ def main ():
                               ---------------------
                            ''')
                     else:
-                        print("Product not Found!...")
+                        print("The student not Found...")
                 
                 # In the fourth case, the logic was built that will be responsible for 
                 # updating the student's information, such as their Program/course and their status (active(True) and inactive(False))
