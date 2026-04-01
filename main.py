@@ -35,10 +35,10 @@ def main ():
                 ''')
             
             ACTIVE = True
-            option = int(input("Choose an option (1 - 5): "))
+            option = int(input("Choose an option (1 - 6): "))
 
             if option < 1 or option > 7:
-                print("ERROR: Choose a valid option (1 -5)!")
+                print("ERROR: Choose a valid option (1 -6)!")
 
             # A MATCH/CASE control structure is defined to manage the user's choice.
             match option:
@@ -73,7 +73,7 @@ def main ():
                             break
                                      
                 # In the second case, the logic is built that will be responsible for displaying a list of the students' information.
-                # The "show_list()" function is used here.
+                # Here not implemented a function.
                 case 2:
                     print(f'''
                              - STUDENT'S LIST -
@@ -103,7 +103,7 @@ def main ():
                         =============================
                         ''')
                     
-                    name = input("Enter the student's name to search: ")
+                    name = input("Enter the student's name or ID to search: ")
                     print("=" * 50)
 
                     found = search_student(student_list, name)
