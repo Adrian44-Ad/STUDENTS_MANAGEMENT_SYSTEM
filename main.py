@@ -68,7 +68,7 @@ def main ():
                         if register:
                             print("Registration successfully...")
                         else:
-                            print("No students registered...")
+                            print("You cannot Register the same Student...")
 
                         print("-" * 50)
                         ask = input("Do you want to register more students? (y/n): ").lower()
