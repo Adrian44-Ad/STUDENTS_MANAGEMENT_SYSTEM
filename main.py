@@ -63,7 +63,12 @@ def main ():
 
                         i += 1
 
-                        register_student(student_list, id, name, age, course, state)
+                        register = register_student(student_list, id, name, age, course, state)
+
+                        if register:
+                            print("Registration successfully...")
+                        else:
+                            print("No students registered...")
 
                         print("-" * 50)
                         ask = input("Do you want to register more students? (y/n): ").lower()
